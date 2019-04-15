@@ -1,4 +1,4 @@
-# year3-mobile-computing
+# mobile-computing
 Uni work and assignments from COMP327 - Mobile Computing
 
 All apps written in Swift 4, using xcode
