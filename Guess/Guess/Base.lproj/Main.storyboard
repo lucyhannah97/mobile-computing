@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guess" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess The Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PQ-ux-yq0">
+                                <rect key="frame" x="113.5" y="35" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have just rolled two dice. What number do you think I rolled?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoZ-1o-1um">
+                                <rect key="frame" x="17.5" y="72" width="340" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="nwn-Lu-o55"/>
+                                    <constraint firstAttribute="height" constant="58" id="svN-ph-9eJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVw-U7-lGl">
+                                <rect key="frame" x="127.5" y="150" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="OOC-uv-pZu"/>
+                                    <constraint firstAttribute="height" constant="30" id="heI-AF-Mar"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZV-my-hUp">
+                                <rect key="frame" x="166" y="200" width="43" height="30"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="guessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dy4-Y4-WFo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The answer is..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbi-u4-wBy">
+                                <rect key="frame" x="127.5" y="250" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1PQ-ux-yq0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="13G-pi-axf"/>
+                            <constraint firstItem="1PQ-ux-yq0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="8at-ir-GP3"/>
+                            <constraint firstItem="wVw-U7-lGl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DmL-EF-FNq"/>
+                            <constraint firstItem="Xbi-u4-wBy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UQP-cR-iXE"/>
+                            <constraint firstItem="wVw-U7-lGl" firstAttribute="top" secondItem="GoZ-1o-1um" secondAttribute="bottom" constant="20" id="dod-fT-fDz"/>
+                            <constraint firstItem="FZV-my-hUp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fir-uo-i1s"/>
+                            <constraint firstItem="FZV-my-hUp" firstAttribute="top" secondItem="wVw-U7-lGl" secondAttribute="bottom" constant="20" id="p45-U9-eu2"/>
+                            <constraint firstItem="Xbi-u4-wBy" firstAttribute="top" secondItem="FZV-my-hUp" secondAttribute="bottom" constant="20" id="twW-6u-vx8"/>
+                            <constraint firstItem="GoZ-1o-1um" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wiA-0X-OmN"/>
+                            <constraint firstItem="GoZ-1o-1um" firstAttribute="top" secondItem="1PQ-ux-yq0" secondAttribute="bottom" constant="16" id="ziV-Sa-m1i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerStr" destination="Xbi-u4-wBy" id="Bn2-wX-xti"/>
+                        <outlet property="inputField" destination="wVw-U7-lGl" id="4Ic-Te-Xsu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
