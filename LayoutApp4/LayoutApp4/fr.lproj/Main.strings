@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "F1I-Xd-oUO"; */
+"F1I-Xd-oUO.normalTitle" = "S'identifier";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "IVT-J2-hUH"; */
+"IVT-J2-hUH.text" = "Mot de passe";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "O8u-Uq-zRn"; */
+"O8u-Uq-zRn.text" = "Nom d'utilisateur";
